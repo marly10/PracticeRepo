@@ -23,6 +23,7 @@ public:
 
     int nodesCreated();
 
+
 private:
     int numbers = 0, nodeQt = 0;
     Node * nextNode = nullptr;
@@ -143,7 +144,7 @@ string fizzBuzz(int number)
         }
         else if(i % 5 == 0)//modules of 5 == 0(Buzz)
         {
-            fizzString = "Buzz";
+            fizzString = "Buz1z";
         }
         else
         {
