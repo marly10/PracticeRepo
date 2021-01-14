@@ -80,6 +80,8 @@ public:
 private:
     Node * headNode;
     int nodeQt = 0;
+
+    void printNodes(Node *h);
 };
 
 NodeList::NodeList() {
@@ -113,7 +115,7 @@ void NodeList::addNode(int nodeValue) {
 }
 
 //prints the nodes made
-void NodeList::printNodes() {
+void NodeList::printNodes(Node * h) {
 
     Node * tempNode = headNode;
 
@@ -160,7 +162,7 @@ return "";
 int main()
 {
 
-    cout << fizzBuzz(33)<< endl;
+    //cout << fizzBuzz(33)<< endl;
 
     Node * first = nullptr;
     Node * second = nullptr;
@@ -180,6 +182,10 @@ int main()
     third->setNext(nullptr);
 
     cout << "Number: "<<first->nodesCreated();
+
+    NodeList p;
+
+    p.printNodes(first);
 
     /*
     //fizzBuzzFunction(15);//calling function
